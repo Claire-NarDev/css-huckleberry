@@ -15,45 +15,52 @@ strong {
 main {
   background-color: hsl(0deg, 0%, 40%);
   border-top: 8px solid hsl(0deg, 0%, 60%);
+  padding: 64px 0;
 }
 
 .intro-chunk {
   max-width: 400px;
+  padding-top: 96px;
+  padding-bottom: 64px;
 }
 
 .card {
   background-color: hsl(0deg, 0%, 100%);
-  max-width: 600px;
-  padding-top: 8px;
   border-bottom: 8px solid hsl(0deg, 0%, 60%);
+  padding: 24px;
+  margin: 0 -24px; /*On enlève le padding pout que le texte reste aligné*/
 }
 
 .max-width-wrapper {
-  padding-top: 48px;
-  padding-bottom: 48px;
-  --max-width: max-content;
-  --margin-left: auto;
-  --margin-right: auto;
-}
-
-.wrap {
-  max-width: max-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0px 24px;
+  max-width: 800px;
 }
 
 .title {
-  padding-left: 16px;
+  font-size: 2rem;
 }
 
 .indented-heading {
+  font-size: 1.5rem;
+  line-height: 1.2;
   background-color: hsl(45deg, 100%, 50%);
   border-bottom: 8px solid hsl(45deg, 100%, 40%);
-  padding: 8px 24px;
   width: fit-content;
-  margin-left: -8px;
+  --margin: 0; /*Reset the margin*/
+  margin-left: -32px;
+  margin-top: -16px;
+  margin-bottom: 1rem;
+  padding: 16px 32px;
 }
 
 p {
-  padding: 8px 16px;
+  font-size: 1.25rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+p:last-child {
+  margin-bottom: 0px;
 }
